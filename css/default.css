@@ -147,7 +147,7 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: rgb(61, 60, 60);
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -595,6 +595,8 @@ input[type="checkbox"] { display: inline; }
 .row {
    width: 96%;
    max-width: 1020px;
+   padding-top: 5px;
+   padding-bottom: 5px;
    margin: 0 auto;
 }
 /* fixed width for IE8 */
