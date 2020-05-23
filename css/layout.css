@@ -32,10 +32,10 @@ body {
 
 header {
    position: relative;
-   height: 800px;
+   height: 850px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/bg.jpg) no-repeat bottom center;
+   background: #161415 url(../images/MitzpeRamon.jpeg) no-repeat top center;
    background-size: cover !important;
    opacity: 100%;
    -webkit-background-size: cover !important;
@@ -55,12 +55,13 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   height: 55%;
-   width: 85%;
+   height: 60%;
+   width: 34%;
    padding-top: 25px;
    padding-bottom: 15px;
    text-align: center;
    background-color: #0F0F0F;
+   opacity: 85%;
    border-radius: 15px;
 }
 
@@ -242,6 +243,12 @@ ul#nav li.current a {
 }
 
 #about h2 {
+   font: 22px/30px 'opensans-bold', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+#about h4 {
    font: 22px/30px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
