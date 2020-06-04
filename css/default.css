@@ -723,7 +723,7 @@ properly.
 @media only screen and (max-width: 767px) {
 
    .row {
-	   width: 460px;
+	   width: 460px ;
 	   margin: 0 auto;
       padding: 0;
 	}
@@ -734,6 +734,21 @@ properly.
 	   margin-right: 0;
       padding: 0 30px;
    }
+   .banner {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 auto;
+      height: 470px !important;
+      width: 300px !important;
+      padding-top: 25px;
+      /* padding-bottom: 15px; */
+      text-align: center;
+      background-color: #0F0F0F;
+      opacity: 85%;
+      border-radius: 15px;
+   }
+}
+
    .row .row { width: auto; max-width: none; margin: 0 -30px; }
 
    [class*="column"] + [class*="column"]:last-child { float: none; }

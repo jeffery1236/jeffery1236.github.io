@@ -55,15 +55,16 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   height: 60%;
+   height: 65%;
    width: 34%;
    padding-top: 25px;
-   padding-bottom: 15px;
+   /* padding-bottom: 15px; */
    text-align: center;
    background-color: #0F0F0F;
    opacity: 85%;
    border-radius: 15px;
 }
+
 
 header .banner-text {
    width: 100%;
