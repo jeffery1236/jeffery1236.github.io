@@ -819,6 +819,6 @@ properly.
 	text-align: center !important;
 }
 
-
-
-
+.banner-text {
+   padding: 5%;
+}

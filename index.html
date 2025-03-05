@@ -6,20 +6,19 @@
 <!--<![endif]-->
 
 <head>
-
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-   <title>Jeffery Cao, NTU</title>
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <title>Jeffery Cao</title>
+   <meta name="description" content="Portfolio website for Jeffery Cao, ML Engineer.">
+   <meta name="author" content="Jeffery Cao">
 
    <!-- Mobile Specific Metas
    ================================================== -->
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
    <!-- CSS
-    ================================================== -->
+   ================================================== -->
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
@@ -31,67 +30,59 @@
    <script src="https://kit.fontawesome.com/c66e62d0ea.js" crossorigin="anonymous"></script>
 
    <!-- Favicons
-	================================================== -->
+   ================================================== -->
    <link rel="shortcut icon" href="/images/favicon.ico">
-   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest"> -->
 
+   <!-- Example inline style block (you can move this into your CSS file) -->
+   <style>
+      /* 1) Lighten the banner text */
+      .banner-text h1,
+      .banner-text p {
+         color: #f2f2f2;
+      }
+
+      /* 2) Make sure major headings are on their own rows */
+      .section-intro {
+         margin-bottom: 30px; /* Creates a gap below the heading */
+      }
+      .section-intro h2 {
+         margin: 0; /* Remove default margins if desired */
+      }
+      .project-card, .work-item, .education-item {
+         margin-bottom: 20px; /* Spacing between items */
+      }
+   </style>
 </head>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143251357-2"></script>
-<script>
-   window.dataLayer = window.dataLayer || [];
-
-   function gtag() {
-      dataLayer.push(arguments);
-   }
-   gtag('js', new Date());
-
-   gtag('config', 'UA-143251357-2');
-</script>
 
 <body>
 
    <!-- Header
    ================================================== -->
    <header id="home">
-
       <nav id="nav-wrap">
-
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-            <!-- <li><a class="smoothscroll" href="#portfolio">Works</a></li> -->
-            <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
+         </ul>
+      </nav>
 
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">I'm Jeffery Cao.</h1>
-            <br>
-            <h3>I'm an 4th year engineering undergraduate from Nanyang Technological University with experiences in
-               <span>research</span>, <span>data science</span> and <span>software development</span>.<br><br>
-               Currently, I'm looking for a full-time position when I graduate in 2021. Feel free to connect with me on linkedin!
-            </h3>
+            <p>
+               A Machine Learning Engineer with a passion for designing and deploying large-scale, data-driven solutions.
+               Currently at Celonis Inc. in New York City, I build cutting-edge ML systems that drive tangible business outcomes.
+               Explore my portfolio and feel free to connect!
+            </p>
             <hr />
             <ul class="social">
-
-               <li><a href="https://www.linkedin.com/in/jeffery-cao-siming-72408a15b/"><i
-                        class="fab fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/jeffery1236"><i class="fab fa-github"></i></a></li>
-               <li><a href="https://www.facebook.com/jeffery.siming"><i class="fab fa-facebook"></i></a></li>
-               <li><a href="https://www.instagram.com/jeffery.y.y.y/"><i class="fab fa-instagram"></i></a></li>
-
+               <li><a href="https://www.linkedin.com/in/jeffery-cao-siming/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/jeffery1236" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/jeffery.siming" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.instagram.com/jeffery.y.y.y/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             </ul>
          </div>
       </div>
@@ -99,259 +90,224 @@
       <p class="scrolldown">
          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
-
    </header> <!-- Header End -->
-
 
    <!-- About Section
    ================================================== -->
+   
    <section id="about">
-
       <div class="row">
-
          <div class="three columns">
-
-            <img class="profile-pic" src="images/profile.png" alt="" />
-
+            <img class="profile-pic" src="images/profile.png" alt="Profile Picture" />
          </div>
 
          <div class="nine columns main-col">
+            <h2>About Me</h2>
+         <p>
+            I am a Machine Learning Engineer with deep expertise in Large Language Models (LLMs), working at the intersection of research and real-world applications. 
+            My focus is on designing, fine-tuning, and deploying LLM-driven systems that power enterprise solutions, enhance automation, and improve decision-making.
+         </p>
+         
+         <p>
+            At <strong>Celonis</strong>, I have developed multiple LLM-based products, including an <strong>Automatic Prompt Generation</strong> module that simplifies 
+            prompt engineering for business users. I also built a <strong>data governance system</strong> for Celonis’ Copilot, ensuring high-quality retrieval-augmented generation (RAG) outputs.
+            My work has been recognized in both <strong>academic conferences (SIGMOD)</strong> and <strong>industry events (Celosphere 2024)</strong>.
+         </p>
+
+         <p>
+            My experience extends beyond product development. I have worked on LLM research, contrastive learning, and large-scale representation learning. With a background in <strong>computational data science from Carnegie Mellon University</strong> and prior research experience in deep learning, I am passionate about contributing the Generative AI field and making products with LLMs.
+         </p>
 
             <div class="row">
                <div class="columns contact-details">
                   <h2>Contact Details</h2>
                   <p class="address">
-                     <span>Jeffery Cao Siming</span><br>
-                     <span>Jurong East Street 31, Singapore<br>
-                        <span>JEFF0019@e.ntu.edu.sg</span>
+                     <span><strong>Email:</strong> <a href="mailto:jeffery2@andrew.cmu.edu">jeffery2@andrew.cmu.edu</a></span><br>
+                     <span><strong>Phone:</strong> (412) 214-2031</span><br>
+                     <span><strong>LinkedIn:</strong> 
+                        <a href="https://www.linkedin.com/in/jeffery-cao-siming/" target="_blank">
+                           linkedin.com/in/jeffery-cao-siming/
+                        </a>
+                     </span>
                   </p>
-
                </div>
 
                <div class="columns download">
                   <p>
-                     <a href="images/resume.pdf" class="button"><i class="fa fa-download"></i>Jeffery's resume</a>
+                     <a href="images/resume.pdf" class="button" target="_blank">
+                        <i class="fa fa-download"></i> View My Resume
+                     </a>
                   </p>
                </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+            </div>
+         </div> <!-- .main-col end -->
       </div>
-
    </section> <!-- About Section End-->
-
 
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
-
-      <!-- Projects
-      ----------------------------------------------- -->
-      <div class="row projects">
-
-         <div class="three columns header-col">
-            <h1><span>Projects</span></h1>
+      <div class="row section-intro">
+         <div class="twelve columns">
+            <h1>My Resume</h1>
+            <p class="lead">
+               Below is a quick overview of my projects, professional experience, and academic background. 
+               For a full version, feel free to download my resume above.
+            </p>
          </div>
+      </div>
 
-         <div class="nine columns main-col">
-            <div>
-               <h4>Deep Q-learning on OpenAI Gym</h4>
-               <p>
-                  - Implemented algorithms presented in <a
-                     href='https://www.researchgate.net/publication/272837232_Human-level_control_through_deep_reinforcement_learning'
-                     target='_blank'><em>Human-level control through deep reinforcement learning</em></a> and <a
-                     href='https://arxiv.org/abs/1509.06461' target='_blank'><em>Deep Reinforcement Learning with Double
-                        Q-learning</em></a> to solve various environments in OpenAI Gym
-               </p>
-            </div>
-            <img class='proj-img'
-               src='https://www.novatec-gmbh.de/wp-content/uploads/reinforcement_learning_loop-650x294.png'>
-         </div> <!-- single-proj-end -->
-
-         <div class="nine columns main-col">
-            <div>
-               <h4>Image Segmentation on Penn-Fudan Pedestrain dataset</h4>
-               <p>
-                  - Applied transfer learning on resnet-based Mask-RCNN model on <a
-                     href='https://www.cis.upenn.edu/~jshi/ped_html/' target='-blank'>Penn-Fudan Database for Pedestrian
-                     Detection and Segmentation</a> to accomplish detection and segmentation tasks
-               </p>
-            </div>
-            <img class='proj-img' src='https://www.cis.upenn.edu/~jshi/ped_html/images/PennPed00015_1.png'>
-         </div> <!-- single-proj-end -->
-
-      </div> <!-- End Projects -->
-
-      <!-- Work
+      
+      <!-- Professional
       ----------------------------------------------- -->
+      <div class="row section-intro">
+         <div class="twelve columns">
+            <h2>Professional</h2>
+         </div>
+      </div>
       <div class="row work">
+         <div class="twelve columns main-col">
+            <!-- Celonis -->
+            <div class="work-item">
+               <h3>Celonis Inc.</h3>
+               <p class="info">
+                  Software Engineer (Machine Learning) <span>&bull;</span> <em>Sep 2023 – Present</em>
+               </p>
+               <ul>
+                  <li>Developed Automatic Prompt Generation showcased at Celosphere 2024.</li>
+                  <li>Authored a SIGMOD Demonstration Paper on a taxonomy-driven Prompt Editor system.</li>
+                  <li>Implemented LLM-based solution for unblocking Credit Blocks, securing a seven-figure deal.</li>
+                  <li>Built Data Governance for Celonis Copilot to ensure data quality in Retrieval Augmented Generation.</li>
+               </ul>
+            </div>
 
-         <div class="three columns header-col">
-            <h1><span>Professional</span></h1>
+            <!-- Pinterest -->
+            <div class="work-item">
+               <h3>Pinterest</h3>
+               <p class="info">
+                  Machine Learning Intern <span>&bull;</span> <em>May 2022 – Aug 2022</em>
+               </p>
+               <ul>
+                  <li>Created a location-based recommender system for local discovery of interests.</li>
+                  <li>Prototyped a contrastive learning method (BERT encoders) for geo-location embeddings.</li>
+                  <li>Implemented an Apache Spark pipeline, automated with Airflow, for production readiness.</li>
+               </ul>
+            </div>
+
+            <!-- NDR Medical -->
+            <div class="work-item">
+               <h3>NDR Medical Technology</h3>
+               <p class="info">
+                  Machine Learning Engineer Intern <span>&bull;</span> <em>Jan 2021 – Jun 2021</em>
+               </p>
+               <ul>
+                  <li>Developed a path-planning module in Python to help a surgical robot avoid lung vessels.</li>
+                  <li>Implemented a modified U-Net to segment 3D CT scans and locate blood vessels.</li>
+                  <li>Built a manual path planner to enhance surgeon workflow and usability.</li>
+               </ul>
+            </div>
+
+            <!-- Safemode -->
+            <div class="work-item">
+               <h3>Safemode</h3>
+               <p class="info">
+                  Data Science Intern <span>&bull;</span> <em>Jan 2020 – Apr 2020</em>
+               </p>
+               <ul>
+                  <li>Modeled driver behavior with gradient-boosted trees, leading to a 1.6 million shekels grant.</li>
+                  <li>Developed an AWS-based ETL pipeline to integrate partner telematics data.</li>
+                  <li>Applied spatial indexing for 40 million geospatial coordinates, reducing runtime by 400x.</li>
+               </ul>
+            </div>
          </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href='https://safemode.co' target='_blank'>
-                     <h3>Safemode, Tel Aviv, Israel</h3>
-                  </a>
-                  <p class="info">Data Science Research Intern <span>&bull;</span> <em class="date">Jan 2020 - Apr
-                        2020</em></p>
-
-                  <p>
-                     - Developed predictive models for driver's behavior to promote efficient behaviorial changes<br>
-                     - Project results aided company in closing investment deals
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href='https://www.ramco.com/' target='_blank'>
-                     <h3>Ramco Systems Ltd, Innovation Lab, Singapore</h3>
-                  </a>
-                  <p class="info">Software Intern <span>&bull;</span> <em class="date">May 2019 - Feb 2019</em></p>
-
-                  <p>
-                     - Developed a computer vision model for facial recognition liveness detection<br>
-                     - Initiated potential partnership with Zoloz, chinese facial recognition startup
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href='https://www.ntu.edu.sg/Pages/home.aspx' target='_blank'>
-                     <h3>Nanyang Technological University, Singapore</h3>
-                  </a>
-                  <p class="info">Undergraduate Researcher <span>&bull;</span> <em class="date">Sep 2018 - Jun 2019</em>
-                  </p>
-
-                  <p>
-                     - Designed a momentum-based learning algorithm for Spiking Neural Networks<br>
-                     - Improved convergence rates and accuracy; Authored research paper documenting results
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href='https://www.societegenerale.com/en/home' target='_blank'>
-                     <h3>Société Générale, Singapore</h3>
-                  </a>
-                  <p class="info">Student Consultant <span>&bull;</span> <em class="date">Feb 2019 - Mar 2019</em>
-                  </p>
-
-                  <p>
-                     - Worked with VP of Talent Development to develop effective learning solutions<br>
-                     - Achieved 2nd Runners up and title of <em>'Most Promising Leader'</em>; 2 proposed ideas were
-                     adopted by Singapore's department
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
+      </div> <!-- End Professional -->
 
       <!-- Education
       ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
+      <div class="row section-intro">
+         <div class="twelve columns">
+            <h2>Education</h2>
          </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Nanyang Technological University</h3>
-                  <p class="info">Bachelors of Engineering in Electrical and Electronic Engineering <span>&bull;</span>
-                     <em class="date">Jun 2021</em></p>
-
-                  <p>
-                     - First Class Honors <br>
-                     - Dean's list Award 2018/19 (Top 5% in cohort)
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>University of Waterloo</h3>
-                  <p class="info">Semester Exchange Program<span>&bull;</span> <em class="date">Dec 2019</em></p>
-
-                  <p>
-
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
+      </div>
+      <div class="row education">
+         <div class="twelve columns main-col">
+            <div class="education-item">
+               <h3>Carnegie Mellon University</h3>
+               <p class="info">
+                  Master of Computational Data Science <span>&bull;</span> <em>May 2023</em>
+               </p>
+               <ul>
+                  <li>GPA: 4.04/4.33</li>
+                  <li>Key Coursework: Distributed Systems, Cloud Computing, ML in Production, Deep Learning Systems</li>
+               </ul>
+            </div>
+            <div class="education-item">
+               <h3>Nanyang Technological University</h3>
+               <p class="info">
+                  B.Eng. (Electrical & Electronic Engineering) <span>&bull;</span> <em>Jun 2021</em>
+               </p>
+               <ul>
+                  <li>Cumulative GPA: 4.88/5.00, Dean’s List (Top 5%)</li>
+                  <li>Andy Grove Scholarship Recipient</li>
+                  <li>Semester Exchange at the University of Waterloo, Canada</li>
+               </ul>
+            </div>
+         </div>
       </div> <!-- End Education -->
 
+    <!-- Projects
+      ----------------------------------------------- -->
+      <div class="row section-intro">
+        <div class="twelve columns">
+           <h2>Projects</h2>
+        </div>
+     </div>
+     <div class="row projects">
+        <div class="twelve columns main-col">
+           <div class="project-card">
+              <h3>AI Guide Dog</h3>
+              <p>
+                Developed the PredRNN spatiotemporal model for egocentric navigation, improving overall accuracy by 10% over the baseline. Incorporated GradCam techniques to enhance interpretability and transparency for end users.
+              </p>
+           </div>
+           <div class="project-card">
+              <h3>Needle Framework</h3>
+              <p>
+                Built an auto-differentiation library in Python and C++ that mimics PyTorch-style neural network training Implemented CUDA kernels for GPU support, achieving a ~10x speedup in matrix operations. Leveraged SIMD and OpenBLAS optimizations for a 1.2x multiplication speed gain over NumPy.
+              </p>
+           </div>
+           <div class="project-card">
+              <h3>Twitter Recommendation System (Spark ETL)</h3>
+              <p>
+                Collaborated in a three-person team to create a Tweet recommendation microservice in Go using the Fasthttp framework. Deployed the service on AWS with Docker, Kubernetes, and Terraform, enabling seamless scalability under high request loads.
+              </p>
+           </div>
+        </div>
+     </div> <!-- End Projects -->
 
    </section> <!-- Resume Section End-->
 
-   <!-- footer================================================== -->
+   <!-- Footer
+   ================================================== -->
    <footer>
-
       <div class="row">
-
          <div class="twelve columns">
-
             <ul class="social-links">
-               <li><a href="https://www.linkedin.com/in/jeffery-cao-siming-72408a15b/" target='_blank'><i
-                        class="fab fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/jeffery1236" target='_blank'><i class="fab fa-github"></i></a></li>
-               <li><a href="https://www.facebook.com/jeffery.siming" target='_blank'><i class="fab fa-facebook"></i></a>
-               </li>
-               <li><a href="https://www.instagram.com/jeffery.y.y.y/" target='_blank'><i
-                        class="fab fa-instagram"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/jeffery-cao-siming/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/jeffery1236" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/jeffery.siming" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.instagram.com/jeffery.y.y.y/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             </ul>
-
             <ul class="copyright">
-               <li>&copy; Copyright 2020 Jeffery</li>
+               <li>&copy; 2025 - Jeffery</li>
+               <li>Design modified from original template</li>
             </ul>
-
          </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
          </div>
-
       </div>
-
-   </footer> <!-- Footer End-->
+   </footer>
 
    <!-- Java Script
    ================================================== -->
@@ -359,13 +315,11 @@
    <script>
       window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
    </script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/init.js"></script>
 
 </body>
-
 </html>
